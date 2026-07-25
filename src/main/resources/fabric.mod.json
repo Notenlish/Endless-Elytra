@@ -3,12 +3,11 @@
 	"id": "endless-elytra",
 	"version": "${version}",
 	"name": "Endless Elytra",
-	"description": "Infinite Elytra durability. Elytras last forever!!",
+	"description": "Infinite Elytra durability. Elytras last forever!",
 	"authors": [
-		"Me!"
+		"Notenlish"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/Notenlish/Endless-Elytra"
 	},
 	"license": "CC0-1.0",
@@ -31,7 +30,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.19.3",
-		"minecraft": "~26.2",
+		"minecraft": "~26.1.2",
 		"java": ">=25",
 		"fabric-api": "*"
 	}
