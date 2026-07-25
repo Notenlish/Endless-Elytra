@@ -3,9 +3,9 @@
 	"id": "endless-elytra",
 	"version": "${version}",
 	"name": "Endless Elytra",
-	"description": "Infinite Elytra durability. Elytras last forever!!",
+	"description": "Infinite Elytra durability. Elytras last forever!",
 	"authors": [
-		"Me!"
+		"Notenlish"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
