@@ -1,5 +1,6 @@
 package com.endlesselytra.mixin;
 
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -13,11 +14,14 @@ import java.util.function.Consumer;
 
 @Mixin(ItemStack.class)
 public class ExampleMixin {
-	@Inject(at = @At("HEAD"), method = "applyDamage", cancellable = true)
-	private void preventElytraDamage(int newDamage,
-	                                 ServerPlayer player,
-	                                 Consumer<Item> onBreak,
-	                                 CallbackInfo ci) {
+	@Inject(at = @At("HEAD"), method = "hurtAndBreak", cancellable = true)
+	private void preventElytraDamage(
+			int damage,
+			ServerLevel level,
+			ServerPlayer player,
+			Consumer<Item> onBreak,
+			CallbackInfo ci
+	) {
 		if (((ItemStack) (Object) this).is(Items.ELYTRA)) {
 			ci.cancel();
 		}
