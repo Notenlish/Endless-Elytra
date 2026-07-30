@@ -8,7 +8,6 @@
 		"Notenlish"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/Notenlish/Endless-Elytra"
 	},
 	"license": "CC0-1.0",
@@ -31,8 +30,8 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.19.3",
-		"minecraft": "~26.2",
-		"java": ">=25",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
 		"fabric-api": "*"
 	}
 }
